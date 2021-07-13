@@ -1,0 +1,51 @@
+/* GENERAL EFFECTS */
+* {
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+/* NAV BAR */
+.nav-bar-container {
+    display: flex;
+    flex-direction: space-between;
+    padding: 10px;
+    /* Following code positions at top */
+    position: fixed;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+}
+.nav-bar-container a {
+    color: inherit;
+    text-decoration: none;
+}
+.nav-bar-1 {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    }
+.nav-bar-2 {
+display: flex;
+padding-right: 15px;
+}
+.nav-bar-left {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+.nav-bar-right {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+.nav-bar-container li {
+    display: inline-block;
+    padding: 5px;
+    margin: 0 5px;
+    color: #222;
+    size: 14px;
+}
+.nav-bar-container li:hover {
+    text-decoration: underline;
+}
