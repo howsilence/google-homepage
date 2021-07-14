@@ -7,6 +7,9 @@
         <title>T-O-P Google Homepage</title>
         <!--CSS HERE-->
         <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
     </head>
     <!-- BODY -->
     <body>
@@ -23,14 +26,25 @@
                         <ul class="nav-bar-right">
                             <li><a href="">Gmail</a></li>
                             <li><a href="">Images</a></li>
-                            <li><a href=""><i class="material-icons-outlined-apps" src="https://fonts.google.com/icons?selected=Material%20Icons%20Outlined%3Aapps">Apps</a></li>
-                            <li><a href=""><img alt="profile-icon" src="https://fonts.google.com/icons?selected=Material%20Icons%20Outlined%3Aaccount_circle">Profile</a></li>
+                            <li><a href="https://www.google.ca/intl/en/about/products"><i class="material-icons">apps</i></a></li>
+                            <li><a href="https://accounts.google.com/SignOutOptions?hl=en&continue=https://www.google.com/"><i class="material-icons">account_circle</i></a></li>
                         </ul>
                     </div>
             </div>
             <!-- NAV BAR END-->
         </header>
+        
         <main>
+            <div class='box-container'> <!-- OPEN BOX-->
+                <div class="grid-1st-row">
+                    <img src="resources/googlelogo_color_272x92dp.png" alt='google logo'>
+                </div>
+                <div class='grid-2nd-row-search'><i class='material-icons'>search</i></div>
+                <div class='grid-2nd-row-bar'><input class="search" type="text" id="search-bar" autofocus></div>
+                <div class='grid-3rd-row-1st-button'><button type='submit' value="text">Google Search</button></div>
+                <div class="grid-3rd-row-2nd-button"><button type="submit" value="text">I'm Feeling Lucky</button></div>
+                <div class="grid-4th-row">Google Offered In<i class="material-icons">language</i></div>
+            </div> <!-- CLOSE BOX-->
         </main>
     </body>
     <!-- FOOTER -->
