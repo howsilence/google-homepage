@@ -1,14 +1,14 @@
 /* GENERAL EFFECTS */
-* {
+body {
     font-family: Arial, sans-serif;
     background-color: white;
+    font-size: 14px;
 }
 /* NAV BAR */
 .nav-bar-container {
     display: flex;
     flex-direction: space-between;
     padding: 10px;
-    /* Following code positions at top */
     position: fixed;
     width: 100%;
     left: 0px;
@@ -49,10 +49,9 @@ padding-right: 15px;
 .nav-bar-container li:hover {
     text-decoration: underline;
 }
-.material-icons {
-    -moz-osx-font-smoothing: grayscale;
+/* END NAV BAR */
 
-}
+/* START GRID */
 .box-container {
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -67,10 +66,10 @@ padding-right: 15px;
     grid-column: 1 / 5;
     grid-row: 1;
 }
-.grid-2nd-row-search {
+.grid-2nd-row-icon {
     grid-column: 1;
     grid-row: 2;
-    z-index: 2;
+    /* z-index: 1; */
 }
 .grid-2nd-row-bar {
     grid-column: 1 / 5;
@@ -85,6 +84,77 @@ grid-column: 3 / 4;
 grid-row: 3;
 }
 .grid-4th-row {
-    grid-column: 3 / 4;
+    grid-column: 2 / 4;
     grid-row: 4;
+   display: block;
+   text-align: center;
+}
+/* END GRID, START SEARCH */
+.google-logo {
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#search-icon {
+    display: block;
+    position: fixed;
+    margin-left: 20px;
+    margin-top: 12px;
+    z-index: 1;
+    color: #a7a7aa;
+}
+.search-bar {
+    width: 80%;
+    height: 2.5rem;
+    padding: 0.25rem 4rem;
+    border: 1px solid #a7a7aa;
+    border-radius: 2rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+ #search-bar:hover {
+filter: drop-shadow(4px 4px 5px rgb(68, 68, 68));
+}
+/* END SEARCH, START BUTTONS */
+.left-button {
+width: 150px;
+height: 40px;
+background: #f8f9fa;
+border-radius: 2px;
+border-style: none;
+cursor: pointer;
+display: block;
+margin-left: 5px;
+}
+.left-button:hover {
+    border: 2px solid darkgrey;
+}
+.left-button:visited {
+    border: solid blue;
+}
+.right-button {
+    width: 150px;
+    height: 40px;
+    background:#f8f9fa;
+    border-radius: 2px;
+    border-style: none;
+    cursor: pointer;
+    display: block;
+    margin-left: 5px;
+}
+.right-button:hover {
+    border: 2px solid darkgrey;
+}
+.right-button:visited {
+    border: solid blue;
+}
+/* END BUTTONS, START LANGUAGE */
+.grid-4th-row a {
+text-decoration: none;
+text-align: right;
+}
+.grid-4th-row a:hover {
+text-decoration: underline;
 }
